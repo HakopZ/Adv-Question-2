@@ -40,7 +40,7 @@ namespace Advanced_Question_2
                 }
 
                 int newMaxx = maxx | (1 << i);
-
+              
                   foreach (int prefix in se)
                 {
                     if (se.Contains(newMaxx ^ prefix))
