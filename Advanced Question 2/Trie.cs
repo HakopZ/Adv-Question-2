@@ -9,19 +9,17 @@ namespace Advanced_Question_2
         public char Letter { get; private set; }
 
         public Dictionary<char, TrieNode> Children;
-        public bool Word { get; set; }
+        
 
         public TrieNode(char b)
         {
             Letter = b;
             Children = new Dictionary<char, TrieNode>();
-            Word = false;
         }
         public TrieNode()
         {
             Letter = ' ';
             Children = new Dictionary<char, TrieNode>();
-            Word = false;
         }
     }
     public class Trie
@@ -33,7 +31,6 @@ namespace Advanced_Question_2
         }
         public void Clear()
         {
-            Root.Word = false;
             Root = null;
         }
         public void Insert(int[] b)
